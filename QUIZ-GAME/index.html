@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container active" id="quizScreen">
+    <div class="quiz-header">
+      <h2 id="question">Question text here</h2>
+      <ul id="options">
+        <!-- Options will be inserted here -->
+      </ul>
+    </div>
+    <button id="nextButton">Next</button>
+    <div class="bottom-info">
+      <p>Question <span id="currentQ">1</span> of <span id="totalQ">5</span></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+  </div>
+
+  <div class="result-screen hide" id="resultScreen">
+    <h2>Quiz Completed!</h2>
+    <p>Your final score is: <span id="finalScore"></span></p>
+    <button id="restartButton">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
